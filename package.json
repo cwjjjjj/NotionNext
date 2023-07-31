@@ -17,7 +17,9 @@
     "build": "next build",
     "start": "next start",
     "post-build": "next-sitemap --config next-sitemap.config.js",
-    "bundle-report": "ANALYZE=true yarn build"
+    "bundle-report": "ANALYZE=true yarn build",
+    "cz": "git add . && git cz",
+    "czp": "pnpm cz && git push -u origin HEAD"
   },
   "dependencies": {
     "@giscus/react": "^2.2.6",
